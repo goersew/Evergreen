@@ -1,0 +1,230 @@
+/* Menubar's curved corners, and hover based on http://www.dynamicdrive.com/style/ */
+                
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 76%;}
+    
+#container{
+    width: 776px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.6em;}
+            
+#menuBar{
+    margin: 0;
+    padding: 0;
+    float: right;
+    background: #6C942F;}
+            
+#menuBar ul{
+    margin: 0;
+    float: left;
+    padding-left: 8px;
+    background: url(./menuBarLeft.gif) bottom left no-repeat; /*left round corner*/}            
+            
+#menuBar ul li{display: inline;}
+
+#menuBar ul li a{
+    float: left;
+    color: white;
+    font-weight: bold;
+    padding: 7px 9px 7px 5px;
+    text-decoration: none;}
+
+#menuBar ul li a:visited{color: white;}
+
+#menuBar ul li a:hover{
+    color: #000;
+    background: transparent url(./pointer.gif) bottom center no-repeat;}
+
+#menuBar ul li a#rightcorner{
+    padding-right: 0;
+    padding-left: 2px;
+    background: url(./menuBarRight.gif) bottom right no-repeat; /*right round corner*/}
+
+#siteName{
+    clear: both;
+    padding-top: 10px;
+    margin-left: 38px;
+    background: url(./roseTopCorner.gif) bottom left no-repeat;
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    font-size: 3.5em;
+    text-align: center;}
+             
+#siteName a{
+    color: #6C942F;
+    font-style: italic;
+    text-decoration: none;}
+
+#siteName a:hover{
+    color: #000;
+    text-decoration: underline;
+    background: transparent;}
+                
+#leftLeftCol{
+    width: 38px;
+    float: left;
+    padding-top: 17px;}
+
+#masthead{
+    width: 100%;
+    height: 150px;
+    background: #47611F;
+    color: #B3BF9B;}
+
+#leftCol{
+    width: 460px;
+    float: left;
+    border-right: 1px solid #FFF;
+    background: #A8CD9B;}
+                            
+#content{
+    width: 440px;    
+    padding: 0 10px 10px 10px;}
+
+.rose{margin-left: -10px;}
+
+#rightCol{
+    width: 276px;
+    margin-right: -1px;
+    float: right;
+    background: #A8CD9B;}
+            
+#menu{
+    width: 242px;
+    padding: 8px;
+    margin: 10px 10px 30px 10px;
+    background: #597A27;
+    font-size: 1.3em;}
+
+#footer{
+    clear: both;
+    width: 100%;
+    padding: 0 0 50px 38px;
+    font-size: .7em;}
+                
+/* menu formatting */
+
+.menuSubtitle{
+    color: #B3BF9B;
+    font-size: 0.75em;
+    font-weight: normal;
+    font-variant: small-caps;
+    margin-bottom: 5px;}
+
+#menu a, #menu a:visited{
+    color: #000;
+    text-decoration: none;}
+
+.activePage{
+    margin-left: -4px;
+    padding-left: 4px;
+    border-width: 0 0 0 5px;
+    border-color: #000;
+    border-style: solid;}
+
+#menu dl{margin: 0;}  		/* eliminates dl spacing above & below menu items */
+
+dt a:hover{
+    background: url(./pointerHorizontal.gif) left center no-repeat;
+    display: block;
+    margin: 0 -8px 0 -8px;
+    padding: 0 8px 0 8px;
+    text-decoration: underline;}
+
+/* Typography */    
+#leftCol h1{
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    font-size: 2em;}
+
+#leftCol h2{
+	margin-left: -.1em;
+	margin-bottom: -.6em;
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    font-size: 1.5em;}
+
+p{
+    font-size: 1.1em;
+    line-height: 135%;}
+    
+#masthead p{
+    padding-top: 35px;
+    font-size: 1.15em;
+	font-weight: bold;
+    line-height: 140%;
+    font-style: italic;
+    text-align: center;}
+
+#rightCol p, h1, h2{margin: 0 10px 0 10px;}
+        
+.citation{
+    font-size: .75em;
+    color: #262626;
+    font-style: italic;}
+    
+.citation a{color: gray;}
+.citation a:visited{color: gray;}
+
+.small{font-size: .95em;}
+.justify{text-align: justify;}
+
+#rightColImage{
+    margin: 18px;}
+#rightColImage a:hover{
+    background: transparent;
+    color: #000;}
+
+/* ************* */
+
+a{
+    color: #aa7700;
+    font-weight: bold;
+	text-decoration: underline;}            
+a:visited{color: #61571C;}
+a:hover{color: black;}
+
+
+
+a img{border: 0;}
+            
+.right{text-align: right;}
+.center{text-align: center;}
+.small-caps{font-variant: small-caps;}
+
+
+.whiteBorder{border: 4px solid white;}
+
+img.floatLeft{float: left;}
+img.floatRight{float: right;}
+img.imagePadding{padding: 0 0 5px 10px;}
+#masthead p{margin: 0;}
+
+
+
+#sticky{
+	height: 230px;
+	width: 230px;
+	background: url(./sticky.gif) center no-repeat;
+	padding-top: 15px;
+}
+
+
+/* Mark Schenk, http://www.markschenk.com/tools/javascript/ */
+img.faviconimg {
+	max-width: 15px;
+	margin-left: 2px;
+	border-width: 0px;
+	vertical-align: top;
+	opacity: 0.5;
+}
+a:hover img.faviconimg { opacity:1; }
+/* ******************************************************* */
+
+/* temporary formatting */
+img.vbsImage{
+	margin-top: -40px;
+	margin-bottom: 10px;}
